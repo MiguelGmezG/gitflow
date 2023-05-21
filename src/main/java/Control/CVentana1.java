@@ -6,6 +6,7 @@ package Control;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 import oovv.Maex;
 import oovv.OrderArray;
 import vista.Ventana1;
@@ -23,14 +24,13 @@ public class CVentana1 implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try {
             switch (e.getActionCommand()) {
-                case "Ejecutar":
+                case "Ejecutar" -> {
                     String[] ArrayNumeros = ventana.getArrayNumeros();
                     ventana.muestra(app.ordenaArray(ArrayNumeros));
-                    break;
-                default:
-                    throw new AssertionError();
+                }
             }
         } catch (Maex maex) {
+            JOptionPane.showMessageDialog(ventana, "Introduce los datos correctemente");
         } catch (AssertionError assertionError) {
         }
     }
