@@ -4,8 +4,10 @@
  */
 package gitflow;
 
+import Control.CVentana;
 import Control.CVentana1;
 import Control.CVentana2;
+import vista.Ventana;
 import vista.Ventana1;
 import vista.Ventana2;
 
@@ -16,13 +18,9 @@ import vista.Ventana2;
 public class Gitflow {
 
     public static void main(String[] args) {
-        Ventana1 f = new Ventana1();
-        CVentana1 c = new CVentana1();
+        Ventana f = new Ventana();
+        CVentana c = new CVentana();
         f.setOidor(c);
-        Ventana2 f2 = new Ventana2();
-        CVentana2 c2 = new CVentana2();
-        f2.setOidor(c2);
-        f2.setVisible(true);
-        f2.setVisible(true);
+        f.setVisible(true);
     }
 }
