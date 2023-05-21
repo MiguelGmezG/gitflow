@@ -5,7 +5,9 @@
 package gitflow;
 
 import Control.CVentana1;
+import Control.CVentana2;
 import vista.Ventana1;
+import vista.Ventana2;
 
 /**
  *
@@ -17,6 +19,10 @@ public class Gitflow {
         Ventana1 f = new Ventana1();
         CVentana1 c = new CVentana1();
         f.setOidor(c);
-        f.setVisible(true);
+        Ventana2 f2 = new Ventana2();
+        CVentana2 c2 = new CVentana2();
+        f2.setOidor(c2);
+        f2.setVisible(true);
+        f2.setVisible(true);
     }
 }
