@@ -2,8 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
+package gitflow;
 
-package com.mycompany.gitflow;
+import Control.CVentana1;
+import vista.Ventana1;
 
 /**
  *
@@ -12,6 +14,9 @@ package com.mycompany.gitflow;
 public class Gitflow {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Ventana1 f = new Ventana1();
+        CVentana1 c = new CVentana1();
+        f.setOidor(c);
+        f.setVisible(true);
     }
 }
