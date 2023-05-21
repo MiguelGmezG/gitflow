@@ -14,6 +14,9 @@ import vista.Ventana1;
 public class Gitflow {
 
     public static void main(String[] args) {
-
+        Ventana1 f = new Ventana1();
+        CVentana1 c = new CVentana1();
+        f.setOidor(c);
+        f.setVisible(true);
     }
 }
